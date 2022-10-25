@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        //  Mengambil Hak akses dengan Method querySelector
+        const root = document.querySelector('#root');
+
+        // Membuat element createElement
+        const element =document.createElement('h1');
+        element.textContent = "Hello Worl From Js";
+
+        // render element ke id html
+        root.appendChild(element);
+    </script>
+</body>
+</html>
