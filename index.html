@@ -25,11 +25,31 @@
         // root.appendChild(element);
         
         const root = document.querySelector('#root');
-        const element = React.createElement('h1',{
-            children : 'Hello From ReacJs!',
-            className: 'heading -1',
-        });
+        // const element = React.createElement('h1',{
+        //     children : 'Hello From ReacJs!',
+        //     className: 'heading -1',
+        // });
 
+        // const p1 = React.createElement('p',{
+        //     children : 'Ini paragraf 1',
+        // });
+
+        // const p2 = React.createElement('p',{
+        //     children : 'Ini Paragraf 2',
+        // });
+        // const element = React.createElement(React.Fragment,{
+        //     children : [p1, p2],
+        // });
+
+        const element = React.createElement(
+            'ul',
+            {className : 'list'},
+            React.createElement('li', null, 'Apple'),
+            React.createElement('li', null, 'Juice'),
+            React.createElement('li', null, 'Grape'),
+        );
+
+        console.log(element);
         ReactDOM.render(element,root);
     </script>
 </body>
