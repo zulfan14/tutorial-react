@@ -9,16 +9,28 @@
 <body>
     <div id="root"></div>
 
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
     <script>
         //  Mengambil Hak akses dengan Method querySelector
-        const root = document.querySelector('#root');
-
+        // const root = document.querySelector('#root');
+        
         // Membuat element createElement
-        const element =document.createElement('h1');
-        element.textContent = "Hello Worl From Js";
+        // const element =document.createElement('h1');
+        // element.textContent = "Hello Worl From Js";
 
         // render element ke id html
-        root.appendChild(element);
+        // root.appendChild(element);
+        
+        const root = document.querySelector('#root');
+        const element = React.createElement('h1',{
+            children : 'Hello From ReacJs!',
+            className: 'heading -1',
+        });
+
+        ReactDOM.render(element,root);
     </script>
 </body>
 </html>
